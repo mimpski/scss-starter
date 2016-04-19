@@ -1,3 +1,10 @@
 /*------------------------------------*\
     #FUNCTIONS
 \*------------------------------------*/
+
+/*** Set a REM font with PX fallback ***/
+/*** @include font-size(14px) ***/
+@function calculateRem($size) {
+  $remSize: $size / 16px;
+  @return $remSize * 1rem;
+}
