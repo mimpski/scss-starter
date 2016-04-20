@@ -1,3 +1,23 @@
 /*------------------------------------*\
     #TYPOGRAPHY
 \*------------------------------------*/
+
+
+/*
+   links.css - v0.0.1 - "Smarter defaults for links"
+   License MIT
+   Adapted from https://github.com/mrmrs/links/blob/master/sass/links.scss
+*/
+
+a {
+  @include transition(color .3s);
+  color: $links;
+}
+
+a:link,
+a:visited { color: $links-visited; }
+a:hover   { color: $links-hover; }
+a:active  {
+  @include transition(color .3s);
+  color: $links-hover;
+}

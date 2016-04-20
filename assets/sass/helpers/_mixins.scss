@@ -41,13 +41,13 @@
 **/
 @mixin breakpoint($break) {
   @if $break == large {
-    @media (max-width: 1420px) { @content; }
+    @media (min-width: $large) { @content; }
   }
   @else if $break == medium {
-    @media (max-width: 1200px) { @content; }
+    @media (min-width: $medium) { @content; }
   }
   @else if $break == small {
-    @media (max-width: 760px) { @content; }
+    @media (min-width: $small) { @content; }
   }
   @else {
     @media ($break) { @content; }

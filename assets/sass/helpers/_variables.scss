@@ -14,6 +14,10 @@ $font-family--secondary: serif;
 $black: #000000;
 $white: #FFFFFF;
 
+$links: #265C83;
+$links-hover: #7FDBFF;
+$links-visited: #265C83;
+
 
 /*** LAYOUT ***/
 
@@ -23,8 +27,6 @@ $min-width: 300px;
 
 /*** RESPONSIVE ***/
 
-$breakpoints: (
-  'small': (min-width: 320px),
-  'medium': (min-width: 768px),
-  'large': (min-width: 1024px),
-) !default;
+$small: 300px;
+$medium: 768px;
+$large: 1024px;

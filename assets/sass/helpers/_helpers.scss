@@ -9,8 +9,13 @@
 }
 
 .wrapper{
+  @include container;
   display: block;
   width: 80%;
   max-width: $max-width;
   margin: 0 auto;
+
+  @include breakpoint(small){
+    width: 90%;
+  }
 }
